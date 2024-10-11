@@ -9,8 +9,8 @@ class Counter extends Component
 
     public $count = 1;
 
-    public function incrementar(){
-        $this->count++;
+    public function incrementar($num){
+        $this->count += $num;
     }
 
     public function decrementar(){
