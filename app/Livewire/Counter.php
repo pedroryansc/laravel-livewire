@@ -2,12 +2,16 @@
 
 namespace App\Livewire;
 
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
-class Counter extends Component
+#[Title("Contador")]
+class Counter extends Component // Componente "Counter"
 {
 
-    public $count = 1;
+    public $count = 1; // Propriedade (Properties)
+
+    // Ações (Actions)
 
     public function incrementar($num){
         $this->count += $num;

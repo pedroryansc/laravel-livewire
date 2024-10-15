@@ -2,7 +2,7 @@
     {{-- The Master doesn't talk, he acts. --}}
 
     <form wire:submit="adicionar">
-        <input type="text" wire:model.live.debounce.5ms="afazer">
+        <input type="text" wire:model="afazer">
 
         <button type="submit">Adicionar</button>
     </form>

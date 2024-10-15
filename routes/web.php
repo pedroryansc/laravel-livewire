@@ -21,6 +21,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("/counter", Counter::class);
+Route::get("/counter", Counter::class)->name("counter");
 
-Route::get("/afazares", Afazeres::class);
+Route::get("/afazeres", Afazeres::class)->name("afazeres");

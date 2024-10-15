@@ -7,6 +7,16 @@
     <title>Livewire Básico</title>
 </head>
 <body>
+    <a href="{{route('counter')}}"><button>Contador</button></a>
+    <a href="{{route('afazeres')}}"><button>Afazeres</button></a>
+
+    <p>Este texto pertence à view "welcome". A seguir, o conteúdo é da view do componente Livewire "HelloWorld":</p>
+    <br>
+    
     <livewire:hello-world/>
+
+    <br>
+    <p>Já esse conteúdo a seguir é a view do componente "PesquisaUsuario":</p>
+    @livewire("pesquisa-usuario")
 </body>
 </html>
