@@ -1,7 +1,9 @@
 <div>
     {{-- If you look to others for fulfillment, you will never truly be fulfilled. --}}
 
-    <h2>Novo Usuário:</h2>
+    <h2>
+        Novo Usuário: <span x-text="$wire.nome.toUpperCase()"></span> <button x-on:click="$wire.nome = ''">Limpar nome</button>
+    </h2>
 
     <form wire:submit="cadastrar">
         <label>
@@ -25,6 +27,10 @@
         <label>
             <span>Senha</span>
             <input type="password" wire:model="senha">
+            <br>
+            <small>Caracteres: 
+                <span x-text="$wire.senha.length"></span>
+            </small>
             @error("senha")
                 <em>{{ $message }}</em>
             @enderror
