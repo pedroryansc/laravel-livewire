@@ -6,6 +6,7 @@ use App\Livewire\Counter;
 use App\Livewire\Afazeres;
 use App\Livewire\Polling;
 use App\Livewire\Usuarios;
+use App\Livewire\CriarUsuario;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,8 @@ Route::get("/counter", Counter::class)->name("counter");
 
 Route::get("/afazeres", Afazeres::class)->name("afazeres");
 
-Route::get("/polling", Polling::class)->name("polling");
+Route::get("/polling", Polling::class);
 
-Route::get("/usuarios", Usuarios::class)->name("usuarios");
+Route::get("/usuarios", Usuarios::class);
+
+Route::get("/criarUsuarios", CriarUsuario::class);
